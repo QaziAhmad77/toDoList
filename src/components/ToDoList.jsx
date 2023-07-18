@@ -6,7 +6,7 @@ import { deleteTodos } from '../reduxStore/features/TodoSlice';
 const ToDoList = ({ todo }) => {
   const [mark, setMark] = useState(false);
   const dispatch = useDispatch();
-  console.log(todo);
+  console.log(todo,"hiiii");
   return (
     <li
       onClick={() => setMark(!mark)}

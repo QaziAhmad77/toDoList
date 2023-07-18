@@ -16,11 +16,11 @@ export const todoSlice = createSlice({
         (item) => item.id !== action.payload
       );
     },
-    removeTodos:(state)=>{
-        state.todosList=[];
-    }
+    removeTodos: (state) => {
+      state.todosList = [];
+    },
   },
 });
 
-export const { addTodos, deleteTodos,removeTodos } = todoSlice.actions;
+export const { addTodos, deleteTodos, removeTodos } = todoSlice.actions;
 export default todoSlice.reducer;
