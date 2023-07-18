@@ -80,15 +80,15 @@ const InputForm = () => {
   // }
   return (
     <div className="w-full bg-bodyColor flex flex-col gap-4">
-      <div className="flex items-center gap-4 h-12">
+      <div className="flex items-center gap-4 mdl:h-12 flex-col mdl:flex-row">
         <input
           onChange={(e) => setToDoValue(e.target.value)}
           value={toDoValue}
-          className="bg-bodyColor w-[80%] h-full  border-[1px] border-gray-400 py-2 px-4 placeholder:text-gray-400 text-white text-base placeholder:text-sm tracking-wide rounded-md outline-none focus-visible:border-orange-600 hover:border-white "
+          className="bg-bodyColor w-full mdl:w-[80%] h-12 mdl:h-full  border-[1px] border-gray-400 py-2 px-4 placeholder:text-gray-400 text-white text-base placeholder:text-sm tracking-wide rounded-md outline-none focus-visible:border-orange-600 hover:border-white "
           type="text"
           placeholder="Enter your Todo"
         />
-        <div className="w-[20%] h-full relative">
+        <div className="w-full mdl:w-[20%] h-12 mdl:h-full relative">
           <select
             onChange={(e) => setCategory(e.target.value)}
             className="w-full h-full text-center capitalize outline-none bg-bodyColor border-[1px] border-gray-400 px-1 cursor-pointer appearance-none rounded-md focus-visible:border-orange-600 hover:border-white"
